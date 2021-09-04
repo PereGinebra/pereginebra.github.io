@@ -1,18 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="images/PGLight.svg" />
-    <title>PereGinebra</title>
+    <title>Pere Ginebra | Computer Scientist</title>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <script>
+        function menuFunc(x) {
+            x.classList.toggle("change");
+        }   
+    </script>
 </head>
 <body>
+    
+    <div>
     <header>
-        <a href="#about">About Me</a>
-        <a href="#init">
-            <img src="images/PGLight.svg" alt="Logo SVG"/>
+        <div class="menubutton" onclick="menuFunc(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <a href="" title="Home button">
+            <object class="logo" type="image/svg+xml" data="images/PGLight.svg" alt="Logo" height="25">
+                <img src="images/PGLight.svg" alt="Logo"/>
+            </object>
         </a>
-        <a href="#contact">Contact</a>
     </header>
+    </div>
+    
+    <section class="hero">
+        <div>
+            <img class="profile" src="images/profile.jpeg" alt="Profile Picture"/>
+            <h1>Pere Ginebra</h1>
+            <h3>Computer Scientist</h3>
+        </div>
+    </section>
 </body>
 </html>
