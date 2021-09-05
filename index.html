@@ -14,26 +14,73 @@
 </head>
 <body>
     
-    <div>
     <header>
-        <div class="menubutton" onclick="menuFunc(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-        </div>
         <a href="" title="Home button">
             <object class="logo" type="image/svg+xml" data="images/PGLight.svg" alt="Logo" height="25">
                 <img src="images/PGLight.svg" alt="Logo"/>
             </object>
         </a>
+        <div id="mobile-menu" class="menubutton" onclick="menuFunc(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        
+        <nav>
+                <ul class="menu">
+                    <li><a href="#AboutMe">About Me</a></li>
+                    <li><ul class="submenu">
+                        <li><a href="#Programming">Programming</a></li>
+                        <li><a href="#Hobbies">Hobbies</a></li>
+                        <li><a href="#Languages">Languages</a></li>
+                    </ul></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+        </nav>
     </header>
-    </div>
     
     <section class="hero">
-        <div>
+        <div class="container">
             <img class="profile" src="images/profile.jpeg" alt="Profile Picture"/>
-            <h1>Pere Ginebra</h1>
-            <h3>Computer Scientist</h3>
+            <h1>My name is Pere Ginebra</h1>
+            <p>I'm a computer scientist from Barcelona looking for new projects and challenges.</p>
+        </div>
+    </section>
+    
+    <section class="aboutMe">
+        <div class="container">
+            <h3>About Me</h3>
+            <div>
+                <h4>Languages</h4>
+                <ul>
+                    <li><p>English: C1 level...<p></li>
+                    <li><p>Catalan: Native<p></li>
+                    <li><p>Spanish: Native<p></li>
+                    <li><p>French: Basic level<p></li>
+                    <li><p>Swedish: Very Basic<p></li>
+                </ul>
+            </div>
+            <nav>
+                <ul class="aboutMeMenu">
+                    <li><a href="#Intro">Intro</a></li>
+                    <li><a href="#Programming">Programming</a></li>
+                    <li><a href="#Hobbies">Hobbies</a></li>
+                    <li><a href="#Langs">Langs</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    
+    <section class="contact">
+        <div class="container">
+            <h3>Contact</h3>
+            <ul>
+                <li><a href="https://github.com/PereGinebra">GitHub</a></li>
+                <li><a href="#LinkedIn">LinkedIn</a></li>
+                <li><a href="pere.ginebra@gmail.com">Gmail</a></li>
+                <li><a href="#CV.pdf">CV</a></li>
+            </ul>
         </div>
     </section>
 </body>

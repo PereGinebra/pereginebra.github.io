@@ -9,30 +9,9 @@ body {
     background-color: #eeeeee;
 }
 
-header {
-    display: flex;
-    align-items: center;
-    padding: 12px 12px;
-    background-color: #ffffff;
-    font-size: 12px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-header a {
-    text-decoration: none;
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #ffffff;
-}
-
 .logo {
     color: black;
 }
-    
-
 .menubutton {
     display: inline-block;
     cursor: pointer;
@@ -71,7 +50,6 @@ header a {
 }
 
 .profile {
-    height: 200px;
     border-radius: 50%;
 }
 
@@ -79,6 +57,3 @@ object {
     pointer-events: none;
 }
 
-img:hover {
-    fill: white;
-}
