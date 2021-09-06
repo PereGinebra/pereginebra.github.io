@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="images/PGLight.svg" />
     <title>Pere Ginebra | Computer Scientist</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
     <script>
         function menuFunc(x) {
             x.classList.toggle("change");
@@ -14,36 +14,38 @@
 </head>
 <body>
     
-    <header>
-        <a href="" title="Home button">
-            <object class="logo" type="image/svg+xml" data="images/PGLight.svg" alt="Logo" height="25">
-                <img src="images/PGLight.svg" alt="Logo"/>
-            </object>
-        </a>
-        <div id="mobile-menu" class="menubutton" onclick="menuFunc(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
+    <header class="navbar">
+        <div class="container">
+            <a href="" title="Home button">
+                <object class="logo" type="image/svg+xml" data="images/PGBlck.svg" alt="Logo">
+                    <img src="images/PGBlck.svg" alt="Logo" height="25"/>
+                </object>
+            </a>
+            <div id="mobile-menu" class="menubutton" onclick="menuFunc(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            
+            <nav class="menu">
+                    <ul>
+                        <li><a href="#AboutMe">About Me</a></li>
+                        <li><ul class="submenu">
+                            <li><a href="#Programming">Programming</a></li>
+                            <li><a href="#Hobbies">Hobbies</a></li>
+                            <li><a href="#Languages">Languages</a></li>
+                        </ul></li>
+                        <li><a href="#Projects">Projects</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                    </ul>
+            </nav>
         </div>
-        
-        <nav>
-                <ul class="menu">
-                    <li><a href="#AboutMe">About Me</a></li>
-                    <li><ul class="submenu">
-                        <li><a href="#Programming">Programming</a></li>
-                        <li><a href="#Hobbies">Hobbies</a></li>
-                        <li><a href="#Languages">Languages</a></li>
-                    </ul></li>
-                    <li><a href="#Projects">Projects</a></li>
-                    <li><a href="#Contact">Contact</a></li>
-                </ul>
-        </nav>
     </header>
     
     <section class="hero">
         <div class="container">
             <img class="profile" src="images/profile.jpeg" alt="Profile Picture"/>
-            <h1>My name is Pere Ginebra</h1>
+            <h1>My name is<br>Pere Ginebra</h1>
             <p>I'm a computer scientist from Barcelona looking for new projects and challenges.</p>
         </div>
     </section>
@@ -51,7 +53,7 @@
     <section class="aboutMe">
         <div class="container">
             <h3>About Me</h3>
-            <div>
+            <div class="container">
                 <h4>Languages</h4>
                 <ul>
                     <li><p>English: C1 level...<p></li>
@@ -63,10 +65,10 @@
             </div>
             <nav>
                 <ul class="aboutMeMenu">
-                    <li><a href="#Intro">Intro</a></li>
-                    <li><a href="#Programming">Programming</a></li>
-                    <li><a href="#Hobbies">Hobbies</a></li>
-                    <li><a href="#Langs">Langs</a></li>
+                    <li><a class="intro" href="#Intro">Intro</a></li>
+                    <li><a class="programming" href="#Programming">Programming</a></li>
+                    <li><a class="hobbies" href="#Hobbies">Hobbies</a></li>
+                    <li><a class="languages" href="#Langs">Langs</a></li>
                 </ul>
             </nav>
         </div>

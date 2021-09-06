@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+    background: #cacaca;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+a {
+    color: #333333;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 1em;
+}
+
+.navbar {
+    background: white;
+    padding: 0.5em;
+    
+    .container {
+        display: flex;
+        place-content: space-between;
+    }
+
+    .logo {
+        margin: 5px;
+        height: 30px;
+    }
+    
+    .menu {
+        display: none;
+    }
+}
+
+.hero {
+    text-align: center;
+
+    .profile {
+        height: 200px;
+        border-radius: 50%;
+    }
+
+    h1 {
+        font-weight: bold;
+        color: #111111;
+        margin: 0.5em;
+    }
+
+    p {
+        font-size: 1.1em;
+        color: #333333;
+        margin: 0.5em;
+    }
+}
+
+.aboutMe {
+    background-color: #777777;
+    padding: 1em;
+    
+    h3 {
+        text-align: center;
+        margin: 0.2em 0;
+        color: #eeeeee;
+        font-size: 1.3em;
+        letter-spacing: 0.05em;
+    }
+
+    .container {
+        .container {
+            margin:1em;
+            padding:1em;
+            background-color: #555555;
+
+            h4 {
+                text-align: center;
+                margin: 0.2em 0;
+                color: #cccccc;
+                letter-spacing: 0.05em;
+            }
+
+            ul {
+                margin: 0.75em 0.75em;
+            }
+
+            p {
+                margin: 0.5em;
+                font-size: 0.8em;
+                color: #cccccc;
+            }
+        }
+        
+        .aboutMeMenu {
+            display: flex;
+            place-content: space-between;
+            a {
+                font-size: 0.8em;
+                color: #cccccc;
+                text-decoration: none;
+                //border: 3px solid white;
+                padding:5px;
+            }
+            .languages {
+                color: white;
+                font-size:0.95em;
+            }
+        }
+    }
+}
+
+.contact {
+    padding: 1em;
+    .container {
+        h3 {
+            text-align: center;
+            margin: 0.2em 0;
+            color: #222222;
+            font-size: 1.3em;
+            letter-spacing: 0.05em; 
+        }
+
+        ul {
+            margin: 1.5em 0.5em;
+            display: flex;
+            place-content: space-between;
+        }
+        
+        a {
+            color: #eeeeee;
+            text-decoration: none;
+            //border: 3px solid white;
+            padding:5px;
+            background: #333333;
+            padding: .3em .6em;
+            border-radius: 5em;
+        }
+    }
+}
+
+.menubutton {
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 5px;
+}   
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+  transition: 0.2s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+object {
+  pointer-events: none;
+}
