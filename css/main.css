@@ -25,6 +25,9 @@ section {
 .navbar {
   background: white;
   padding: 0.5em;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .navbar .container {
@@ -43,8 +46,15 @@ section {
   display: none;
 }
 
+.navbar .menubutton {
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
 .hero {
   text-align: center;
+  margin-top: 4.5em;
 }
 
 .hero .profile {
@@ -139,19 +149,19 @@ section {
   place-content: space-between;
 }
 
-.contact .container a {
-  color: #eeeeee;
-  text-decoration: none;
-  padding: 5px;
-  background: #333333;
-  padding: .3em .6em;
-  border-radius: 5em;
+.contact .container .linkedin {
+  fill: black;
 }
 
-.menubutton {
-  display: inline-block;
-  cursor: pointer;
-  margin: 0 5px;
+.contact .container .CV {
+  color: #cacaca;
+  text-decoration: none;
+  font-weight: 20px;
+  padding: 5px;
+  font-weight: bold;
+  background: black;
+  padding: .3em .6em;
+  border-radius: 5em;
 }
 
 .bar1, .bar2, .bar3 {
