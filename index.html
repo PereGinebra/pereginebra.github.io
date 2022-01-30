@@ -6,11 +6,7 @@
     <link rel="icon" href="images/PGLight.svg" />
     <title>Pere Ginebra | Computer Scientist</title>
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
-    <script>
-        function menuFunc(x) {
-            x.classList.toggle("change");
-        }   
-    </script>
+    <script src="javascript/index.js"></script>
 </head>
 <body>
     
@@ -53,7 +49,30 @@
     <section class="aboutMe">
         <div class="container">
             <h3>About Me (work in progress)</h3>
-            <div class="container">
+            <div id="introSection" class="selectedSection">
+                <h4>Intro</h4>
+                <ul>
+                    <p>Lorem ipsum or whatever...<p>
+                </ul>
+            </div>
+            <div id="programmingSection" class="hiddenSection">
+                <h4>Programming Languages</h4>
+                <ul>
+                    <li><p>Advanced: Python, C++, C, Java. Can learn similar languages relatively fast.<p></li>
+                    <li><p>Basic: Haskell, Prolog, MatLab, R, SQL, Assembly, PDDL, OpenGL, OpenMP...<p></li>
+                    <li><p>Self taught: HTML + CSS, JavaScript, (C)<p></li>
+                </ul>
+            </div>
+            <div id="hobbiesSection" class="hiddenSection">
+                <h4>Hobbies</h4>
+                <ul>
+                    <li><p>Tech: I like following the sector's developments (both consumer-wise and idk)<p></li>
+                    <li><p>Video games: Multiplayer games, AAAs, indie titles and more experimental games<p></li>
+                    <li><p>Working out: doing casual exercise at home<p></li>
+                    <li><p>Traveling: learning about different cultures, their languages, buildings and people<p></li>
+                </ul>
+            </div>
+            <div id="languagesSection" class="hiddenSection">
                 <h4>Languages</h4>
                 <ul>
                     <li><p>English: C1 level...<p></li>
@@ -63,12 +82,14 @@
                     <li><p>Swedish: Very Basic<p></li>
                 </ul>
             </div>
+            <a class="prev" onclick="previousSection()">&#10094;</a>
+            <a class="next" onclick="nextSection()">&#10095;</a>
             <nav>
                 <ul class="aboutMeMenu">
-                    <li><a class="intro" href="#Intro">Intro</a></li>
-                    <li><a class="programming" href="#Programming">Programming</a></li>
-                    <li><a class="hobbies" href="#Hobbies">Hobbies</a></li>
-                    <li><a class="languages" href="#Langs">Langs</a></li>
+                    <li><a id="introButton" class="selectButton" href="#Intro" onclick="selectSectionById(this.id.substring(0,this.id.length-6))">Intro</a></li>
+                    <li><a id="programmingButton" href="#Programming" onclick="selectSectionById(this.id.substring(0,this.id.length-6))">Programming</a></li>
+                    <li><a id="hobbiesButton" href="#Hobbies" onclick="selectSectionById(this.id.substring(0,this.id.length-6))">Hobbies</a></li>
+                    <li><a id="languagesButton" href="#Langs" onclick="selectSectionById(this.id.substring(0,this.id.length-6))">Langs</a></li>
                 </ul>
             </nav>
         </div>

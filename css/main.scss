@@ -85,7 +85,8 @@ section {
     }
 
     .container {
-        .container {
+        .selectedSection {
+            min-height: 175px;
             margin:1em;
             padding:1em;
             background-color: #555555;
@@ -107,6 +108,10 @@ section {
                 color: #cccccc;
             }
         }
+
+        .hiddenSection {
+            display: none;
+        }
         
         .aboutMeMenu {
             display: flex;
@@ -118,12 +123,39 @@ section {
                 //border: 3px solid white;
                 padding:5px;
             }
-            .languages {
+
+            .selectButton {
                 color: white;
-                font-size:0.95em;
+                font-size:0.8em;
             }
         }
     }
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    margin-top: -140px;
+    margin-left: -20px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
 }
 
 .contact {
