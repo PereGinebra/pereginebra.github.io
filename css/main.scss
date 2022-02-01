@@ -26,6 +26,7 @@ section {
     background: white;
     padding: 0.5em;
     position: fixed;
+    z-index: 998;
     top: 0;
     width: 100%;
     
@@ -38,15 +39,54 @@ section {
         margin: 5px;
         height: 30px;
     }
+
+    
     
     .menu {
-        display: none;
+        display: block;
+        position: fixed;
+        z-index:999;
+        right: 0;
+        top: 0;
+        background: #777777;
+        padding: 1em;
+        min-width: 30%;
+        min-height: 40vh;
+        transition: 0.2s;
+
+        .main-list {
+            padding-top: 2.5em;
+            padding-left: 1em;
+            padding-bottom: 0.2em;
+            li {
+                padding: 0.2em 0 0.2em 0;
+                a {
+                    color: white;
+                    text-decoration: none;
+                    display: block;
+                    text-align: right;
+                    font-size: 1.2em;
+
+                    &:hover {
+                        font-weight: bold;
+                    }
+                }
+            }
+            .submenu {
+                padding-right: 2em;
+            }
+        }
     }
+
+    .hide {
+        display: none;
+    }    
 
     .menubutton {
         display: inline-block;
         cursor: pointer;
-        margin-right: 15px;
+        z-index: 1000;
+        margin-right: 25px;
     } 
 }
 
@@ -122,11 +162,18 @@ section {
                 text-decoration: none;
                 //border: 3px solid white;
                 padding:5px;
+
+                &:hover {
+                    color: #e2e2e2;
+                }
             }
 
             .selectButton {
                 color: white;
                 font-size:0.8em;
+                &:hover {
+                    color: white;
+                }
             }
         }
     }
@@ -174,21 +221,19 @@ section {
             display: flex;
             place-content: space-between;
         }
-        
-        .linkedin {
-            fill: black;
-        }
+
 
         .CV {
+            margin-bottom:0;
             color: #cacaca;
             text-decoration: none;
-            font-weight: 20px;
             //border: 3px solid white;
             padding:5px;
+            font-size: 15px;
             font-weight: bold;
             //background: #0077b5;
             background: black;
-            padding: .3em .6em;
+            padding: .1em .4em;
             border-radius: 5em;
         }
 
@@ -208,6 +253,7 @@ section {
 .change .bar1 {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
   transform: rotate(-45deg) translate(-9px, 6px) ;
+  background-color: white;
 }
 
 /* Fade out the second bar */
@@ -219,6 +265,7 @@ section {
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
   transform: rotate(45deg) translate(-8px, -8px) ;
+  background-color: white;
 }
 
 object {

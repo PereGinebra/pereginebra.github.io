@@ -4,11 +4,24 @@ function init() {
     selectedButton = document.getElementById("introButton");
     selectedSection = document.getElementById("introSection");
     selectedId = "intro";
+
+    menuCard = document.getElementById("menuCard");
 }
 
 function menuFunc(x) {
-    console.log(x);
     x.classList.toggle("change");
+    menuCard.classList.toggle("hide");
+}
+
+function goToSectionById(id) {
+    selectSectionById(id);
+    const section = document.getElementById(id+"Section");
+    section.scrollIntoView();
+}
+
+function goToElementById(id) {
+    const element = document.getElementById(id);
+    element.scrollIntoView();
 }
 
 function selectSectionById(id) {

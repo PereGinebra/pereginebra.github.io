@@ -26,6 +26,7 @@ section {
   background: white;
   padding: 0.5em;
   position: fixed;
+  z-index: 998;
   top: 0;
   width: 100%;
 }
@@ -43,13 +44,54 @@ section {
 }
 
 .navbar .menu {
+  display: block;
+  position: fixed;
+  z-index: 999;
+  right: 0;
+  top: 0;
+  background: #777777;
+  padding: 1em;
+  min-width: 30%;
+  min-height: 40vh;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.navbar .menu .main-list {
+  padding-top: 2.5em;
+  padding-left: 1em;
+  padding-bottom: 0.2em;
+}
+
+.navbar .menu .main-list li {
+  padding: 0.2em 0 0.2em 0;
+}
+
+.navbar .menu .main-list li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  text-align: right;
+  font-size: 1.2em;
+}
+
+.navbar .menu .main-list li a:hover {
+  font-weight: bold;
+}
+
+.navbar .menu .main-list .submenu {
+  padding-right: 2em;
+}
+
+.navbar .hide {
   display: none;
 }
 
 .navbar .menubutton {
   display: inline-block;
   cursor: pointer;
-  margin-right: 15px;
+  z-index: 1000;
+  margin-right: 25px;
 }
 
 .hero {
@@ -129,9 +171,17 @@ section {
   padding: 5px;
 }
 
+.aboutMe .container .aboutMeMenu a:hover {
+  color: #e2e2e2;
+}
+
 .aboutMe .container .aboutMeMenu .selectButton {
   color: white;
   font-size: 0.8em;
+}
+
+.aboutMe .container .aboutMeMenu .selectButton:hover {
+  color: white;
 }
 
 .prev, .next {
@@ -184,18 +234,15 @@ section {
   place-content: space-between;
 }
 
-.contact .container .linkedin {
-  fill: black;
-}
-
 .contact .container .CV {
+  margin-bottom: 0;
   color: #cacaca;
   text-decoration: none;
-  font-weight: 20px;
   padding: 5px;
+  font-size: 15px;
   font-weight: bold;
   background: black;
-  padding: .3em .6em;
+  padding: .1em .4em;
   border-radius: 5em;
 }
 
@@ -212,6 +259,7 @@ section {
 .change .bar1 {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
   transform: rotate(-45deg) translate(-9px, 6px);
+  background-color: white;
 }
 
 /* Fade out the second bar */
@@ -223,6 +271,7 @@ section {
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
+  background-color: white;
 }
 
 object {
