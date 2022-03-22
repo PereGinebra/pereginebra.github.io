@@ -209,6 +209,27 @@ section {
     background-color: rgba(0,0,0,0.8);
 }
 
+.projects {
+    .container {
+        h3 {
+            text-align: center;
+            margin: 0.2em 0;
+            color: #222222;
+            font-size: 1.3em;
+            letter-spacing: 0.05em; 
+        }
+
+        li {
+            div {
+                text-align: center;
+                img {
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+
 .contact {
     padding: 1em;
     .container {
