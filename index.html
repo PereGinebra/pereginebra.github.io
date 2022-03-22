@@ -49,11 +49,18 @@
     
     <section class="aboutMe">
         <div class="container">
-            <h3>About Me (work in progress)</h3>
+            <h3>About Me</h3>
             <div id="introSection" class="selectedSection">
                 <h4>Intro</h4>
                 <ul>
-                    <p>Lorem ipsum or whatever...<p>
+                    <p id="aboutIntro">
+                        I'm a _ year old about to finish his 4 year bachelor's in Computer Science.<br/> 
+                        I like technology and am interested in most fields of CS, but specially AI, Data Science and Software Engineering.<br/>
+                        I'm currently looking for real life experience to apply all the things I've learned, and will learn from more seasoned colleagues.<br/>
+                        This will also help me decide what field I want to specialize further in, and if I want to pursue a Master's in said field.<br/><br/>
+                        So if you are looking for a developer that fits my description, don't hesitate to 
+                        <a href="#Contact" onclick="goToElementById('contact')">contact me!</a>
+                    </p>
                 </ul>
             </div>
             <div id="programmingSection" class="hiddenSection">
@@ -61,26 +68,26 @@
                 <ul>
                     <li><p>Advanced: Python, C++, C, Java. Can learn similar languages relatively fast.<p></li>
                     <li><p>Basic: Haskell, Prolog, MatLab, R, SQL, Assembly, PDDL, OpenGL, OpenMP...<p></li>
-                    <li><p>Self taught: HTML + CSS, JavaScript, (C)<p></li>
+                    <li><p>Self taught: C#, HTML + CSS, JavaScript (+ React and D3.js)<p></li>
                 </ul>
             </div>
             <div id="hobbiesSection" class="hiddenSection">
                 <h4>Hobbies</h4>
                 <ul>
-                    <li><p>Tech: I like following the sector's developments (both consumer-wise and idk)<p></li>
+                    <li><p>Tech: I like following the sector's developments<p></li>
                     <li><p>Video games: Multiplayer games, AAAs, indie titles and more experimental games<p></li>
                     <li><p>Working out: doing casual exercise at home<p></li>
                     <li><p>Traveling: learning about different cultures, their languages, buildings and people<p></li>
+                    <li><p>Socializing: meeting new people from different backgrounds and ways of thinking to mine</p></li>
                 </ul>
             </div>
             <div id="languagesSection" class="hiddenSection">
                 <h4>Languages</h4>
                 <ul>
-                    <li><p>English: C1 level...<p></li>
+                    <li><p>English: Fluent, C1 level (TOEFL score of 113/120). Learned throughout various stays in the USA and exchange studies in Stockholm.<p></li>
                     <li><p>Catalan: Native<p></li>
                     <li><p>Spanish: Native<p></li>
                     <li><p>French: Basic level<p></li>
-                    <li><p>Swedish: Very Basic<p></li>
                 </ul>
             </div>
             <a class="prev" onclick="previousSection()">&#10094;</a>
@@ -90,7 +97,7 @@
                     <li><a id="introButton" class="selectButton" href="#Intro" onclick="selectSectionById(this.id.substring(0,this.id.length-6))">Intro</a></li>
                     <li><a id="programmingButton" href="#Programming" onclick="selectSectionById(this.id.substring(0,this.id.length-6))">Programming</a></li>
                     <li><a id="hobbiesButton" href="#Hobbies" onclick="selectSectionById(this.id.substring(0,this.id.length-6))">Hobbies</a></li>
-                    <li><a id="languagesButton" href="#Langs" onclick="selectSectionById(this.id.substring(0,this.id.length-6))">Langs</a></li>
+                    <li><a id="languagesButton" href="#Langs" onclick="selectSectionById(this.id.substring(0,this.id.length-6))">Languages</a></li>
                 </ul>
             </nav>
         </div>

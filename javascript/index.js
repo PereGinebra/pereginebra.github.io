@@ -6,6 +6,7 @@ function init() {
     selectedId = "intro";
 
     menuCard = document.getElementById("menuCard");
+    setMyAge();
 }
 
 function menuFunc(x) {
@@ -78,4 +79,15 @@ function previousSection() {
             selectSectionById('hobbies')
         break;
     }
+}
+
+function setMyAge() {
+    let intro = document.getElementById('aboutIntro');
+    const date = new Date();
+    let age = date.getFullYear() - 2000;
+    if (date.getMonth()+1 < 8 || (date.getMonth()+1 == 8 && date.getDate() < 15)) {
+        age-=1;
+    }
+    intro.innerText = intro.innerText.replace("_",age.toString());
+    console.log('helou');
 }

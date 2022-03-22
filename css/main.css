@@ -153,6 +153,10 @@ section {
   color: #cccccc;
 }
 
+.aboutMe .container .selectedSection p a {
+  display: inline-block;
+}
+
 .aboutMe .container .hiddenSection {
   display: none;
 }
@@ -162,6 +166,7 @@ section {
   display: -ms-flexbox;
   display: flex;
   place-content: space-between;
+  padding: 0 15px 0 15px;
 }
 
 .aboutMe .container .aboutMeMenu a {
@@ -227,7 +232,7 @@ section {
 }
 
 .contact .container ul {
-  margin: 1.5em 0.5em;
+  margin: 1em 5em 0 5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

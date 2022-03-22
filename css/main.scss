@@ -146,6 +146,9 @@ section {
                 margin: 0.5em;
                 font-size: 0.8em;
                 color: #cccccc;
+                a {
+                    display: inline-block;
+                }
             }
         }
 
@@ -156,6 +159,7 @@ section {
         .aboutMeMenu {
             display: flex;
             place-content: space-between;
+            padding: 0 15px 0 15px;
             a {
                 font-size: 0.8em;
                 color: #cccccc;
@@ -217,7 +221,8 @@ section {
         }
 
         ul {
-            margin: 1.5em 0.5em;
+            //padding: 0 15em 0 15em;
+            margin: 1em 5em 0 5em;
             display: flex;
             place-content: space-between;
         }
