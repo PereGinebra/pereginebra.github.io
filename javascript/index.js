@@ -17,12 +17,12 @@ function menuFunc(x) {
 function goToSectionById(id) {
     selectSectionById(id);
     const section = document.getElementById(id+"Section");
-    section.scrollIntoView();
+    section.scrollIntoView({behavior: "smooth", block: "center"});
 }
 
 function goToElementById(id) {
     const element = document.getElementById(id);
-    element.scrollIntoView();
+    element.scrollIntoView({behavior: "smooth", block: "center"});
 }
 
 function selectSectionById(id) {
