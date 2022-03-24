@@ -147,14 +147,15 @@ section {
   margin: 0.75em 0.75em;
 }
 
-.aboutMe .container .selectedSection p {
-  margin: 0.5em;
+.aboutMe .container .selectedSection span {
   font-size: 0.8em;
   color: #cccccc;
 }
 
-.aboutMe .container .selectedSection p a {
-  display: inline-block;
+.aboutMe .container .selectedSection a {
+  text-decoration: none;
+  font-size: 0.8em;
+  color: #eeeeee;
 }
 
 .aboutMe .container .hiddenSection {
@@ -192,7 +193,6 @@ section {
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  width: auto;
   margin-top: -140px;
   margin-left: -20px;
   padding: 16px;
@@ -223,12 +223,26 @@ section {
   text-align: center;
   margin: 0.2em 0;
   color: #222222;
-  font-size: 1.3em;
+  font-size: 1.5em;
   letter-spacing: 0.05em;
 }
 
+.projects .container li {
+  margin: 0.5em 0 0.5em 0;
+}
+
 .projects .container li div {
+  margin: 1em;
+  padding: 0.5em;
+  background-color: #999999;
   text-align: center;
+}
+
+.projects .container li div h4 {
+  margin: 0.2em;
+  font-size: 2em;
+  color: #eeeeee;
+  font-weight: normal;
 }
 
 .projects .container li div img {

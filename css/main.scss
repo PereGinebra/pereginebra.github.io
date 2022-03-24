@@ -142,13 +142,15 @@ section {
                 margin: 0.75em 0.75em;
             }
 
-            p {
-                margin: 0.5em;
+            span {
                 font-size: 0.8em;
                 color: #cccccc;
-                a {
-                    display: inline-block;
-                }
+            }
+
+            a {
+                text-decoration: none;
+                font-size: 0.8em;
+                color: #eeeeee; 
             }
         }
 
@@ -186,7 +188,6 @@ section {
 .prev, .next {
     cursor: pointer;
     position: absolute;
-    width: auto;
     margin-top: -140px;
     margin-left: -20px;
     padding: 16px;
@@ -215,13 +216,23 @@ section {
             text-align: center;
             margin: 0.2em 0;
             color: #222222;
-            font-size: 1.3em;
+            font-size: 1.5em;
             letter-spacing: 0.05em; 
         }
 
         li {
+            margin: 0.5em 0 0.5em 0;
             div {
+                margin: 1em;
+                padding: 0.5em;
+                background-color: #999999;
                 text-align: center;
+                h4 {
+                    margin:0.2em;
+                    font-size: 2em;
+                    color: #eeeeee;
+                    font-weight:normal;
+                }
                 img {
                     width: 50%;
                 }
@@ -247,7 +258,6 @@ section {
             display: flex;
             place-content: space-between;
         }
-
 
         .CV {
             margin-bottom:0;
