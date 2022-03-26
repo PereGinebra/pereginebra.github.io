@@ -1,4 +1,5 @@
 window.onload = init;
+window.addEventListener('resize', updateCardHeight);
 
 function init() {
     selectedButton = document.getElementById("introButton");
@@ -6,6 +7,7 @@ function init() {
     selectedId = "intro";
 
     menuCard = document.getElementById("menuCard");
+    updateCardHeight();
     setMyAge();
 }
 
@@ -39,6 +41,7 @@ function selectSectionById(id) {
         section.classList.toggle('hiddenSection');
         button.classList.toggle('selectButton');
 
+        if (id === 'intro') updateCardHeight();
         //store the selected section
         selectedId = id;
         selectedSection = section;
@@ -89,5 +92,15 @@ function setMyAge() {
         age-=1;
     }
     intro.innerText = intro.innerText.replace("_",age.toString());
-    console.log('helou');
 }
+
+function updateCardHeight() {
+    let cards = Array.from(document.getElementsByClassName('card'));
+    let introCard = document.getElementById('introSection');
+    introCard.style.height = 'auto';    //set intro to auto so it recalculates its height
+    const introHeight = introCard.clientHeight-32; //get new height
+    cards.forEach(card => {     //set it to all cards
+        card.style.height = introHeight > 0 ? introHeight.toString()+'px' : 'auto';
+    });
+    
+  }

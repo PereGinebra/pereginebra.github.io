@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 body {
-  background: #cacaca;
+  background: #dddddd;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
@@ -117,7 +117,7 @@ section {
 }
 
 .aboutMe {
-  background-color: #777777;
+  background-color: #919191;
   padding: 1em;
 }
 
@@ -129,71 +129,47 @@ section {
   letter-spacing: 0.05em;
 }
 
-.aboutMe .container .selectedSection {
-  min-height: 175px;
+.aboutMe .carousel {
+  /* Position the "next button" to the right */
+}
+
+.aboutMe .carousel .selectedSection {
   margin: 1em;
   padding: 1em;
   background-color: #555555;
 }
 
-.aboutMe .container .selectedSection h4 {
+.aboutMe .carousel .selectedSection h4 {
   text-align: center;
   margin: 0.2em 0;
   color: #cccccc;
   letter-spacing: 0.05em;
 }
 
-.aboutMe .container .selectedSection ul {
+.aboutMe .carousel .selectedSection ul {
   margin: 0.75em 0.75em;
 }
 
-.aboutMe .container .selectedSection span {
+.aboutMe .carousel .selectedSection span {
   font-size: 0.8em;
   color: #cccccc;
 }
 
-.aboutMe .container .selectedSection a {
+.aboutMe .carousel .selectedSection a {
   text-decoration: none;
+  font-weight: 600;
   font-size: 0.8em;
   color: #eeeeee;
 }
 
-.aboutMe .container .hiddenSection {
+.aboutMe .carousel .hiddenSection {
   display: none;
 }
 
-.aboutMe .container .aboutMeMenu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  place-content: space-between;
-  padding: 0 15px 0 15px;
-}
-
-.aboutMe .container .aboutMeMenu a {
-  font-size: 0.8em;
-  color: #cccccc;
-  text-decoration: none;
-  padding: 5px;
-}
-
-.aboutMe .container .aboutMeMenu a:hover {
-  color: #e2e2e2;
-}
-
-.aboutMe .container .aboutMeMenu .selectButton {
-  color: white;
-  font-size: 0.8em;
-}
-
-.aboutMe .container .aboutMeMenu .selectButton:hover {
-  color: white;
-}
-
-.prev, .next {
+.aboutMe .carousel .prev, .aboutMe .carousel .next {
   cursor: pointer;
   position: absolute;
-  margin-top: -140px;
+  margin-top: -170px;
   margin-left: -20px;
   padding: 16px;
   color: white;
@@ -208,15 +184,41 @@ section {
           user-select: none;
 }
 
-/* Position the "next button" to the right */
-.next {
+.aboutMe .carousel .prev:hover, .aboutMe .carousel .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.aboutMe .carousel .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+.aboutMe .carousel .aboutMeMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+  padding: 0 15px 0 15px;
+}
+
+.aboutMe .carousel .aboutMeMenu a {
+  font-size: 0.8em;
+  color: #cccccc;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.aboutMe .carousel .aboutMeMenu a:hover {
+  color: #e6e6e6;
+}
+
+.aboutMe .carousel .aboutMeMenu .selectButton {
+  color: white;
+  font-size: 0.8em;
+}
+
+.aboutMe .carousel .aboutMeMenu .selectButton:hover {
+  color: white;
 }
 
 .projects .container h3 {
@@ -234,7 +236,7 @@ section {
 .projects .container li div {
   margin: 1em;
   padding: 0.5em;
-  background-color: #999999;
+  background-color: #a4a4a4;
   text-align: center;
 }
 
