@@ -1,10 +1,29 @@
 window.onload = init;
-window.addEventListener('resize', updateCardHeight);
+window.addEventListener('resize', function(event) {
+    if(window.innerWidth !== windowWidth) {
+        updateCardHeight();
+        windowWidth = window.innerWidth;
+    }
+    windowHeight = window.innerHeight;
+}, true);
+
+//GLOBAL VARIABLES
+var selectedButton = undefined;
+var selectedSection = undefined;
+var selectedId = undefined;
+
+var windowWidth = undefined;
+var windowHeight = undefined;
+
+var storedCardHeight = undefined;
 
 function init() {
     selectedButton = document.getElementById("introButton");
     selectedSection = document.getElementById("introSection");
     selectedId = "intro";
+
+    windowWidth = window.innerWidth;
+    windowHeight = window.innerHeight;
 
     menuCard = document.getElementById("menuCard");
     updateCardHeight();
@@ -99,8 +118,10 @@ function updateCardHeight() {
     let introCard = document.getElementById('introSection');
     introCard.style.height = 'auto';    //set intro to auto so it recalculates its height
     const introHeight = introCard.clientHeight-32; //get new height
+    if (introHeight > 0) storedCardHeight = introHeight;
     cards.forEach(card => {     //set it to all cards
         card.style.height = introHeight > 0 ? introHeight.toString()+'px' : 'auto';
+        if(card.clientHeight-33 < storedCardHeight) card.style.height = storedCardHeight.toString()+'px';
     });
     
   }
