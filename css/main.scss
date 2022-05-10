@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 body {
-    background: #dddddd;
+    background: #ccd7de;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -38,9 +38,7 @@ section {
     .logo {
         margin: 5px;
         height: 30px;
-    }
-
-    
+    }    
     
     .menu {
         display: block;
@@ -92,8 +90,14 @@ section {
 
 .hero {
     text-align: center;
-    margin-top: 4.5em;
+    margin-top: 3.8em;
 
+    background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0),rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.5)),url("../images/Background-3264x1200.jpg");
+    height: 50%;
+    background-position:top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
     .profile {
         height: 200px;
         border-radius: 50%;

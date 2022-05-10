@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 body {
-  background: #dddddd;
+  background: #ccd7de;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
@@ -96,7 +96,14 @@ section {
 
 .hero {
   text-align: center;
-  margin-top: 4.5em;
+  margin-top: 3.8em;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(rgba(0, 0, 0, 0)), color-stop(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.5))), url("../images/Background-3264x1200.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.5)), url("../images/Background-3264x1200.jpg");
+  height: 50%;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 .hero .profile {
