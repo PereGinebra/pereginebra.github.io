@@ -251,6 +251,10 @@ section {
   width: 50%;
 }
 
+.projects .container li div video {
+  width: 50%;
+}
+
 .contact {
   padding: 1em;
 }

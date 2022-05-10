@@ -43,7 +43,8 @@ function goToSectionById(id) {
 
 function goToElementById(id) {
     const element = document.getElementById(id);
-    element.scrollIntoView({behavior: "smooth", block: "center"});
+    if(id == 'projects') element.scrollIntoView({behavior: "smooth"});
+    else element.scrollIntoView({behavior: "smooth", block: "center"});
 }
 
 function selectSectionById(id) {
