@@ -1,11 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 body {
   background: #ccd7de;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 
 a {
@@ -30,19 +29,14 @@ section {
   top: 0;
   width: 100%;
 }
-
 .navbar .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   place-content: space-between;
 }
-
 .navbar .logo {
   margin: 5px;
   height: 30px;
 }
-
 .navbar .menu {
   display: block;
   position: fixed;
@@ -53,20 +47,16 @@ section {
   padding: 1em;
   min-width: 30%;
   min-height: 40vh;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
-
 .navbar .menu .main-list {
   padding-top: 2.5em;
   padding-left: 1em;
   padding-bottom: 0.2em;
 }
-
 .navbar .menu .main-list li {
   padding: 0.2em 0 0.2em 0;
 }
-
 .navbar .menu .main-list li a {
   color: white;
   text-decoration: none;
@@ -74,19 +64,15 @@ section {
   text-align: right;
   font-size: 1.2em;
 }
-
 .navbar .menu .main-list li a:hover {
   font-weight: bold;
 }
-
 .navbar .menu .main-list .submenu {
   padding-right: 2em;
 }
-
 .navbar .hide {
   display: none;
 }
-
 .navbar .menubutton {
   display: inline-block;
   cursor: pointer;
@@ -97,7 +83,6 @@ section {
 .hero {
   text-align: center;
   margin-top: 3.8em;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(rgba(0, 0, 0, 0)), color-stop(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.5))), url("../images/Background-3264x1200.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.5)), url("../images/Background-3264x1200.jpg");
   height: 50%;
   background-position: top;
@@ -105,18 +90,15 @@ section {
   background-size: cover;
   position: relative;
 }
-
 .hero .profile {
   height: 200px;
   border-radius: 50%;
 }
-
 .hero h1 {
   font-weight: bold;
   color: #111111;
   margin: 0.5em;
 }
-
 .hero p {
   font-size: 1.1em;
   color: #333333;
@@ -127,7 +109,6 @@ section {
   background-color: #919191;
   padding: 1em;
 }
-
 .aboutMe h3 {
   text-align: center;
   margin: 0.2em 0;
@@ -135,44 +116,36 @@ section {
   font-size: 1.3em;
   letter-spacing: 0.05em;
 }
-
 .aboutMe .carousel {
   /* Position the "next button" to the right */
 }
-
 .aboutMe .carousel .selectedSection {
   margin: 1em;
   padding: 1em;
   background-color: #555555;
 }
-
 .aboutMe .carousel .selectedSection h4 {
   text-align: center;
   margin: 0.2em 0;
   color: #cccccc;
   letter-spacing: 0.05em;
 }
-
 .aboutMe .carousel .selectedSection ul {
   margin: 0.75em 0.75em;
 }
-
 .aboutMe .carousel .selectedSection span {
   font-size: 0.8em;
   color: #cccccc;
 }
-
 .aboutMe .carousel .selectedSection a {
   text-decoration: none;
   font-weight: 600;
   font-size: 0.8em;
   color: #eeeeee;
 }
-
 .aboutMe .carousel .hiddenSection {
   display: none;
 }
-
 .aboutMe .carousel .prev, .aboutMe .carousel .next {
   cursor: pointer;
   position: absolute;
@@ -182,48 +155,37 @@ section {
   color: white;
   font-weight: bold;
   font-size: 18px;
-  -webkit-transition: 0.6s ease;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
-
 .aboutMe .carousel .prev:hover, .aboutMe .carousel .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
-
 .aboutMe .carousel .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-
 .aboutMe .carousel .aboutMeMenu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   place-content: space-between;
   padding: 0 15px 0 15px;
 }
-
 .aboutMe .carousel .aboutMeMenu a {
   font-size: 0.8em;
   color: #cccccc;
   text-decoration: none;
   padding: 5px;
 }
-
 .aboutMe .carousel .aboutMeMenu a:hover {
   color: #e6e6e6;
 }
-
 .aboutMe .carousel .aboutMeMenu .selectButton {
   color: white;
   font-size: 0.8em;
 }
-
 .aboutMe .carousel .aboutMeMenu .selectButton:hover {
   color: white;
 }
@@ -235,29 +197,24 @@ section {
   font-size: 1.5em;
   letter-spacing: 0.05em;
 }
-
 .projects .container li {
   margin: 0.5em 0 0.5em 0;
 }
-
 .projects .container li div {
   margin: 1em;
   padding: 0.5em;
   background-color: #a4a4a4;
   text-align: center;
 }
-
 .projects .container li div h4 {
   margin: 0.2em;
   font-size: 2em;
   color: #eeeeee;
   font-weight: normal;
 }
-
 .projects .container li div img {
   width: 50%;
 }
-
 .projects .container li div video {
   width: 50%;
 }
@@ -265,7 +222,6 @@ section {
 .contact {
   padding: 1em;
 }
-
 .contact .container h3 {
   text-align: center;
   margin: 0.2em 0;
@@ -273,15 +229,11 @@ section {
   font-size: 1.3em;
   letter-spacing: 0.05em;
 }
-
 .contact .container ul {
   margin: 1em 5em 0 5em;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   place-content: space-between;
 }
-
 .contact .container .CV {
   margin-bottom: 0;
   color: #cacaca;
@@ -290,7 +242,7 @@ section {
   font-size: 15px;
   font-weight: bold;
   background: black;
-  padding: .1em .4em;
+  padding: 0.1em 0.4em;
   border-radius: 5em;
 }
 
@@ -299,13 +251,11 @@ section {
   height: 5px;
   background-color: black;
   margin: 6px 0;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
 /* Rotate first bar */
 .change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
   transform: rotate(-45deg) translate(-9px, 6px);
   background-color: white;
 }
@@ -317,7 +267,6 @@ section {
 
 /* Rotate last bar */
 .change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
   background-color: white;
 }
@@ -359,5 +308,4 @@ object {
             }
         }
     }
-}*/
-/*# sourceMappingURL=main.css.map */
+}*//*# sourceMappingURL=main.css.map */
